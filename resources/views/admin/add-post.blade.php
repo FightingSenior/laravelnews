@@ -59,7 +59,6 @@
 </div>
 @stop
 
-<!-- script ckeditor section -->
 @section('ckeditor_script')
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -80,4 +79,3 @@
 	});
 </script>
 @stop
-<!-- end script ckeditor section -->
