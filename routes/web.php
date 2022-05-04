@@ -24,3 +24,7 @@ Route::get('category', function () {
 Route::get('post', function () {
     return view('home.article');
 });
+
+Route::get('admin', function () {
+    return view('admin.index');
+});
