@@ -45,54 +45,60 @@
 	</div>
 
 	<div class="col-sm-8 cat-view">
-		<div class="row">
-			<div class="col-sm-3">
-				<select name="bulk-action" class="form-control">
-					<option>Bulk Action</option>
-					<option>Move to Trash</option>
-				</select>
+		<form method="post" action="{{url('multipledelete')}}">
+			<div class="row">
+				{{csrf_field()}}
+				<input type="hidden" name="tbl" value="{{encrypt('categories')}}">
+				<input type="hidden" name="tblid" value="{{encrypt('category_id')}}">
+				<div class="col-sm-3">
+					<select name="bulk-action" class="form-control">
+						<option value="0">Bulk Action</option>
+						<option value="1">Move to Trash</option>
+					</select>
+				</div>
+				<div class="col-sm-2">
+					<button class="btn btn-default">Apply</button>
+				</div>
+				<div class="col-sm-3 col-sm-offset-4">
+					<input type="text" id="search" class="form-control" placeholder="Search Category">
+				</div>
 			</div>
-			<div class="col-sm-2">
-				<button class="btn btn-default">Apply</button>
+
+			<div class="content">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th><input type="checkbox" id="select-all"> Name</th>
+							<th>Slug</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						@if(count($data)>0)
+						@foreach($data as $category)
+						<tr>
+							<td>
+								<input type="checkbox" name="select-data[]" value="{{$category->category_id}}">
+								<a href="{{url('edit-category')}}/{{$category->category_id}}">{{$category->title}}</a>
+							</td>
+							<td>{{$category->slug}}</td>
+							<td>@if($category->status==1)
+								<span class="label label-success">on</span>
+								@else
+								<span class="label label-danger">off</span>
+								@endif
+							</td>
+						</tr>
+						@endforeach
+						@else
+						<tr>
+							<td colspan="3">No data found</td>
+						</tr>
+						@endif
+					</tbody>
+				</table>
 			</div>
-			<div class="col-sm-3 col-sm-offset-4">
-				<input type="text" id="search" name="search" class="form-control" placeholder="Search Category">
-			</div>
-		</div>
-		<div class="content">
-			<table class="table table-striped">
-				<thead>
-					<tr>
-						<th><input type="checkbox" id="select-all"> Name</th>
-						<th>Slug</th>
-						<th>Status</th>
-					</tr>
-				</thead>
-				<tbody>
-					@if(count($data)>0)
-					@foreach($data as $category)
-					<tr>
-						<td>
-							<input type="checkbox" name="select-cat">
-							<a href="{{url('edit-category')}}/{{$category->category_id}}">{{$category->title}}</a>
-						</td>
-						<td>{{$category->slug}}</td>
-						<td>@if($category->status==1)
-							<span class="label label-success">on</span>
-							@else
-							<span class="label label-danger">off</span>
-							@endif
-						</td>
-					</tr>
-					@endforeach
-					@else
-					<tr>
-						<td colspan="3">No data found</td>
-					</tr>
-					@endif
-				</tbody>
-			</table>
-		</div>
+		</form>
 	</div>
 </div>
 

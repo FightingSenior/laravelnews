@@ -60,15 +60,10 @@
                 </div>
                 <div class="collapse navbar-collapse" id="mynavbar">
                     <ul class="nav nav-justified">
-                        <li><a href="#" class="active"><span class="glyphicon glyphicon-home"></span></a></li>
-                        <li><a href="#">POLITICS</a></li>
-                        <li><a href="#">BUSINESS</a></li>
-                        <li><a href="#">ENTERTAINMENT</a></li>
-                        <li><a href="#">TECHNOLOGY</a></li>
-                        <li><a href="#">SPORTS</a></li>
-                        <li><a href="#">TRAVEL</a></li>
-                        <li><a href="#">STYLE</a></li>
-                        <li><a href="#">HEALTH</a></li>
+                        <li><a href="{{url('/')}}" class="active"><span class="glyphicon glyphicon-home"></span></a></li>
+                        @foreach($categories as $cat)
+                        <li><a class="text-uppercase" href="{{url('category')}}/{{$cat->slug}}">{{$cat->title}}</a></li>
+                        @endforeach
                     </ul>
                 </div>
             </nav>
@@ -140,24 +135,26 @@
     <div class="col-md-12 text-center copyright">Copyright &copy; 2022</div>
 
     <!-- #endregion -->
-    <script>            
-	$(document).ready(function() {
-		var duration = 500;
-		$(window).scroll(function() {
-			if ($(this).scrollTop() > 500) {
-				$('.goto').fadeIn(duration);
-			} else {
-				$('.goto').fadeOut(duration);
-			}
-		});
+    <script>
+        $(document).ready(function() {
+            var duration = 500;
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 500) {
+                    $('.goto').fadeIn(duration);
+                } else {
+                    $('.goto').fadeOut(duration);
+                }
+            });
 
-		$('.goto').click(function(event) {
-			event.preventDefault();
-			$('html').animate({scrollTop: 0}, duration);
-			return false;
-		})
-	});
-</script>	
+            $('.goto').click(function(event) {
+                event.preventDefault();
+                $('html').animate({
+                    scrollTop: 0
+                }, duration);
+                return false;
+            })
+        });
+    </script>
 </body>
 
 </html>

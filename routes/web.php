@@ -26,3 +26,6 @@ Route::get('viewcategory', 'AdminController@viewCategory');
 Route::post('addcategory','CrudController@insertData');
 
 Route::get('edit-category/{id}','AdminController@editCategory');
+
+Route::post('updatecategory/{id}','CrudController@updateData');
+Route::post('multipledelete','AdminController@multipleDelete');
