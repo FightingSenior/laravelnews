@@ -28,7 +28,7 @@
                 <ul class="treeview-menu">
                     <li><a href="view-table.html"><i class="fa fa-eye"></i>All Posts</a></li>
                     <li><a href="add-post.html"><i class="fa fa-plus-circle"></i>Add Posts</a></li>
-                    <li><a href="category.html"><i class="fa fa-plus-circle"></i>Categories</a></li>
+                    <li><a href="{{url('viewcategory')}}"><i class="fa fa-plus-circle"></i>Categories</a></li>
                 </ul>
             </li>
             <li class="treeview">
@@ -120,10 +120,10 @@
 
     <!-- #endregion -->
 
-    <script type="text/javascript" src="{{url('js/jquery.min.js')}}"></script>
-    <script type="text/javascript" src="{{url('js/bootstrap.min.js')}}"></script>
-    <script type="text/javascript" src="{{url('js/app.min.js')}}"></script>
-    <script type="text/javascript" src="{{url('js/script.js')}}"></script>
+    <script type="text/javascript" src="{{url('adminstyle/js/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{url('adminstyle/js/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{url('adminstyle/js/app.min.js')}}"></script>
+    <script type="text/javascript" src="{{url('adminstyle/js/script.js')}}"></script>
 
     @yield('ckeditor_script')
 

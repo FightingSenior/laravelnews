@@ -13,18 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home.index');
-});
+Route::get('/', 'HomeController@index');
 
-Route::get('category', function () {
-    return view('home.category');
-});
+Route::get('category', 'HomeController@category');
 
-Route::get('post', function () {
-    return view('home.article');
-});
+Route::get('post', 'HomeController@post');
 
-Route::get('admin', function () {
-    return view('admin.index');
-});
+Route::get('admin', 'AdminController@index');
+
+Route::get('viewcategory', 'AdminController@viewCategory');
+
+Route::post('addcategory','CrudController@insertData');
+
+Route::get('edit-category/{id}','AdminController@editCategory');
+
+Route::post('updatecategory/{id}','CrudController@updateData');
+Route::post('multipledelete','AdminController@multipleDelete');
