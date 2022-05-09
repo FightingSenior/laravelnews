@@ -17,10 +17,10 @@
 
     <div class="sidebar">
         <ul class="sidebar-menu">
-            <li><a href="index.html" class="dashboard"><i class="fa fa-tachometer"></i> <span>Dashboard</span></a></li>
+            <li><a href="index.html" class="dashboard"><i class="fa fa-tachometer"></i> <span>Bảng điều khiển</span></a></li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-bookmark-o"></i> <span>Posts</span>
+                    <i class="fa fa-bookmark-o"></i> <span>Bài đăng</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -33,7 +33,7 @@
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-image"></i> <span>Gallery</span>
+                    <i class="fa fa-image"></i> <span>Bộ sưu tập</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -47,7 +47,7 @@
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-file"></i> <span>Pages</span>
+                    <i class="fa fa-file"></i> <span>Trang</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -67,7 +67,7 @@
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-bar-chart"></i> <span>Reports</span>
+                    <i class="fa fa-bar-chart"></i> <span>Báo cáo</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -79,7 +79,7 @@
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-user-plus"></i> <span>Users</span>
+                    <i class="fa fa-user-plus"></i> <span>Người dùng</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -91,7 +91,7 @@
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-address-book"></i> <span>Active User</span>
+                    <i class="fa fa-address-book"></i> <span>Người dùng đang hoạt động</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
