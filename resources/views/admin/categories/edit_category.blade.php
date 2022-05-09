@@ -27,7 +27,7 @@
 
 			<div class="form-group">
 				<label>Slug</label>
-				<input type="text" name="slug" id="slug" class="form-control" readonly="" value="{{$singledata->slug}}">
+				<input type="text" name="slug" id="slug" class="form-control" value="{{$singledata->slug}}">
 				<p>The “slug” is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens.</p>
 			</div>
 			<div class="form-group">

@@ -26,7 +26,7 @@
 
 			<div class="form-group">
 				<label>Slug</label>
-				<input type="text" name="slug" id="slug" class="form-control" readonly="">
+				<input type="text" name="slug" id="slug" class="form-control">
 				<p>The “slug” is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens.</p>
 			</div>
 			<div class="form-group">
