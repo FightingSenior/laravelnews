@@ -9,7 +9,7 @@
 
   <div class="col-sm-12">
     <div class="content">
-      <h2>Chào mừng đến với Trang tổng quan</h2>
+      <h2>Chào mừng đến với trang Tổng quan</h2>
       <p class="welcome-text">Chúng tôi đã tập hợp một số liên kết để bạn bắt đầu.</p>
       <div class="row">
         <div class="col-sm-4">
@@ -38,11 +38,9 @@
     </div>
 
     <div class="content">
-      <div class="col-sm-3">
-        <img src="{{url('images/logo-big.png')}}" width="100%">
-      </div>
+      
       <div class="col-sm-9">
-        <p><b><a href="http://www.webtrickshome.com" target="_blank">Webtrickshome.com</a></b> The ultimate home for prospective web developers.</p>
+        
         <div class="row">
           <ul class="nav navbar-nav">
             <li><a href="#">Photoshop</a></li>
