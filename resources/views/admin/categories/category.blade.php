@@ -4,7 +4,7 @@
 
 <div class="row">
 	<div class="col-sm-12 title">
-		<h1><i class="fa fa-bars"></i> Categories</h1>
+		<h1><i class="fa fa-bars"></i> THỂ LOẠI</h1>
 	</div>
 
 	<div class="col-sm-4 cat-form">
@@ -14,30 +14,30 @@
 			{{Session('message')}}
 		</div>
 		@endif
-		<h3>Add New Category</h3>
+		<h3>Thêm danh mục mới</h3>
 		<form method="post" action="{{url('addcategory')}}">
 			{{csrf_field()}}
 			<input type="hidden" name="tbl" value="{{encrypt('categories')}}">
 			<div class="form-group">
-				<label>Name</label>
+				<label>Tên</label>
 				<input type="text" name="title" id="category_name" class="form-control">
-				<p>The name is how it appears on your site.</p>
+				<p>Tên là cách nó xuất hiện trên trang web của bạn.</p>
 			</div>
 
 			<div class="form-group">
 				<label>Slug</label>
 				<input type="text" name="slug" id="slug" class="form-control" readonly="">
-				<p>The “slug” is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens.</p>
+				<p>“Slug” là phiên bản thân thiện với URL của tên. Nó thường là tất cả các chữ thường và chỉ chứa các chữ cái, số và dấu gạch ngang.</p>
 			</div>
 			<div class="form-group">
-				<label>Status</label>
+				<label>Trạng thái</label>
 				<select calss="form-control" name="status">
 					<option value='1'>on</option>
 					<option value='0'>off</option>
 				</select>
 			</div>
 			<div class="form-group">
-				<button class="btn btn-primary">Add New Category</button>
+				<button class="btn btn-primary">Thêm</button>
 			</div>
 		</form>
 
@@ -52,15 +52,15 @@
 				<input type="hidden" name="tblid" value="{{encrypt('category_id')}}">
 				<div class="col-sm-3">
 					<select name="bulk-action" class="form-control">
-						<option value="0">Bulk Action</option>
-						<option value="1">Move to Trash</option>
+						<option value="0">Hành động hàng loạt</option>
+						<option value="1">Di chuyển vào thùng rác</option>
 					</select>
 				</div>
 				<div class="col-sm-2">
-					<button class="btn btn-default">Apply</button>
+					<button class="btn btn-default">Nộp đơn</button>
 				</div>
 				<div class="col-sm-3 col-sm-offset-4">
-					<input type="text" id="search" class="form-control" placeholder="Search Category">
+					<input type="text" id="search" class="form-control" placeholder="Tìm kiếm danh mục">
 				</div>
 			</div>
 
@@ -68,9 +68,9 @@
 				<table class="table table-striped">
 					<thead>
 						<tr>
-							<th><input type="checkbox" id="select-all"> Name</th>
+							<th><input type="checkbox" id="select-all"> Tên</th>
 							<th>Slug</th>
-							<th>Status</th>
+							<th>Trạng thái</th>
 						</tr>
 					</thead>
 					<tbody>
