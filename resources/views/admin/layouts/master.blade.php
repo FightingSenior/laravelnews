@@ -17,44 +17,44 @@
 
     <div class="sidebar">
         <ul class="sidebar-menu">
-            <li><a href="index.html" class="dashboard"><i class="fa fa-tachometer"></i> <span>Dashboard</span></a></li>
+            <li><a href="index.html" class="dashboard"><i class="fa fa-tachometer"></i> <span>Bảng điều khiển</span></a></li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-bookmark-o"></i> <span>Posts</span>
+                    <i class="fa fa-bookmark-o"></i> <span>Bài đăng</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="view-table.html"><i class="fa fa-eye"></i>All Posts</a></li>
-                    <li><a href="add-post.html"><i class="fa fa-plus-circle"></i>Add Posts</a></li>
-                    <li><a href="{{url('viewcategory')}}"><i class="fa fa-plus-circle"></i>Categories</a></li>
+                    <li><a href="view-table.html"><i class="fa fa-eye"></i>Tất cả bài viết</a></li>
+                    <li><a href="add-post.html"><i class="fa fa-plus-circle"></i>Thêm bài đăng</a></li>
+                    <li><a href="{{url('viewcategory')}}"><i class="fa fa-plus-circle"></i>Thể loại</a></li>
                 </ul>
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-image"></i> <span>Gallery</span>
+                    <i class="fa fa-image"></i> <span>Bộ sưu tập</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-eye"></i>All Images</a></li>
-                    <li><a href="#"><i class="fa fa-plus-circle"></i>Add Images</a></li>
-                    <li><a href="#"><i class="fa fa-eye"></i>All Videos</a></li>
-                    <li><a href="#"><i class="fa fa-plus-circle"></i>Add Videos</a></li>
+                    <li><a href="#"><i class="fa fa-eye"></i>Tất cả hình ảnh</a></li>
+                    <li><a href="#"><i class="fa fa-plus-circle"></i>Thêm hình ảnh</a></li>
+                    <li><a href="#"><i class="fa fa-eye"></i>Tất cả video</a></li>
+                    <li><a href="#"><i class="fa fa-plus-circle"></i>Thêm video</a></li>
                 </ul>
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-file"></i> <span>Pages</span>
+                    <i class="fa fa-file"></i> <span>Trang</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-eye"></i>All Pages</a></li>
-                    <li><a href="#"><i class="fa fa-plus-circle"></i>Add Pages</a></li>
+                    <li><a href="#"><i class="fa fa-eye"></i>Tất cả các trang</a></li>
+                    <li><a href="#"><i class="fa fa-plus-circle"></i>Thêm trang</a></li>
                 </ul>
             </li>
             <li class="treeview">
@@ -67,38 +67,38 @@
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-bar-chart"></i> <span>Reports</span>
+                    <i class="fa fa-bar-chart"></i> <span>Báo cáo</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-eye"></i>All Reports</a></li>
-                    <li><a href="#"><i class="fa fa-plus-circle"></i>Add Reports</a></li>
+                    <li><a href="#"><i class="fa fa-eye"></i>Tất cả báo cáo</a></li>
+                    <li><a href="#"><i class="fa fa-plus-circle"></i>Thêm báo cáo</a></li>
                 </ul>
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-user-plus"></i> <span>Users</span>
+                    <i class="fa fa-user-plus"></i> <span>Người dùng</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-eye"></i>All Users</a></li>
-                    <li><a href="#"><i class="fa fa-plus-circle"></i>Add Users</a></li>
+                    <li><a href="#"><i class="fa fa-eye"></i>Tất cả người dùng</a></li>
+                    <li><a href="#"><i class="fa fa-plus-circle"></i>Thêm người dùng</a></li>
                 </ul>
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-address-book"></i> <span>Active User</span>
+                    <i class="fa fa-address-book"></i> <span>Người dùng đang hoạt động</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-edit"></i>Edit Profile</a></li>
-                    <li><a href="login.html"><i class="fa fa-power-off"></i>Log Out</a></li>
+                    <li><a href="#"><i class="fa fa-edit"></i>Chỉnh sửa hồ sơ</a></li>
+                    <li><a href="login.html"><i class="fa fa-power-off"></i>Đăng xuất</a></li>
                 </ul>
             </li>
         </ul>
