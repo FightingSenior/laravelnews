@@ -39,7 +39,7 @@
 
     <div class="">
       
-      <div class="col-sm-9 mt-10">
+      <div class="col-sm-9 mt-12">
         
         <div class="row">
           <ul class="nav navbar-nav">
