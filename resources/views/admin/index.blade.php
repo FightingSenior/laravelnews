@@ -37,9 +37,9 @@
       </div>
     </div>
 
-    <div class="content">
+    <div class="">
       
-      <div class="col-sm-9">
+      <div class="col-sm-9 mt-10">
         
         <div class="row">
           <ul class="nav navbar-nav">
